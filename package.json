@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/deanmlittle/rpuzzle.git"
+    "url": "git+https://github.com/deanmlittle/rpuzzle.git"
   },
   "author": "Dean Little",
   "license": "ISC",
@@ -18,5 +18,14 @@
   "homepage": "https://github.com/deanmlittle/rpuzzle",
   "peerDependencies": {
     "bsv": "^1.5.3"
-  }
+  },
+  "directories": {
+    "example": "examples",
+    "lib": "lib",
+    "test": "tests"
+  },
+  "keywords": [
+    "BSV",
+    "RPuzzle"
+  ]
 }

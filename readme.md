@@ -5,7 +5,7 @@ A simple library to help you create, sign and spend any kind of R Puzzle.
 *Please note, RPuzzle has a peer dependency of `bsv` which must be installed independently to avoid version collisions.*
 
 To get started, simply run:
-```npm i bsv https://github.com/deanmlittle/rpuzzle```
+```npm i bsv @deanmlittle/rpuzzle```
 
 ### Quickstart
 In true Bitcoin fashion, code is well-commented, poorly documented. You can create them randomly, from a PrivateKey, a buffer, a hex string or even an XPriv path. Here's an example of creating and spending a HASH160 P2RPH from Random:
@@ -117,6 +117,9 @@ The current type options include:
 
 Want to contribute? Please do! Feel free to submit bugs or pull requests to this repo. 
 You can also tip me at `deanlittle@moneybutton.com`, `1deanlittle` or `/pay @40` on Twetch.
+
+### Contributors
+@TeamWinnar / u/45
 
 ### Legal stuff
 This code is provided free of charge with no warranties. Use at your own risk. Besides that, I don't really care how you use it so long as you promise to go build something cool. ;)
