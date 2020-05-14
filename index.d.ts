@@ -63,4 +63,6 @@ declare module '@deanmlittle/rpuzzle' {
     match(script: bsv.Script): boolean;
     getUTXOs(tx: bsv.Transction): Array<bsv.Transaction.UnspentOutput>;
   }
+
+  export default RPuzzle;
 }
