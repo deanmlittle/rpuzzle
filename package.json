@@ -1,13 +1,21 @@
 {
   "name": "rpuzzle",
   "version": "0.0.1",
-  "description": "",
+  "description": "A simple library to help you create, sign and spend any kind of R Puzzle.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: Tests coming soon (tm)\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/deanmlittle/rpuzzle.git"
+  },
   "author": "Dean Little",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/deanmlittle/rpuzzle/issues"
+  },
+  "homepage": "https://github.com/deanmlittle/rpuzzle",
   "peerDependencies": {
     "bsv": "^1.5.3"
   }
