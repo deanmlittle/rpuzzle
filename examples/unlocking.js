@@ -1,4 +1,4 @@
-const RPuzzle = require('../index').RPuzzle;
+const RPuzzle = require('../index');
 const Transaction = require('bsv').Transaction;
 const Script = require('bsv').Script;
 const Address = require('bsv').Address;

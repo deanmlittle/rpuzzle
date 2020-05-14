@@ -40,7 +40,9 @@ One of the simplest ways to do this is with MoneyButton. Copy your ASM script in
 ></div>
 ```
 
-Swipe to put the TX on chain, copy the TXID from your Moneybutton, then head over to: `https://api.blockchair.com/bitcoin-sv/raw/transaction/<txid>`. We'll need to get the raw hex value of the transaction.
+Here's a jsfiddle to make the whole process a little easier: https://jsfiddle.net/wfotksg6/
+
+Swipe to put the TX on chain, copy the TXID from your Moneybutton, then head over to: `http://api.whatsonchain.com/v1/bsv/main/<txid>/hex` to get the raw hex of the transaction.
 
 #### Step 3) Create an unlocking transaction
 Remember that K value hex string from step 1? We'll need that here:
