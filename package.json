@@ -1,0 +1,14 @@
+{
+  "name": "rpuzzle",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: Tests coming soon (tm)\" && exit 1"
+  },
+  "author": "Dean Little",
+  "license": "ISC",
+  "peerDependencies": {
+    "bsv": "^1.5.3"
+  }
+}
