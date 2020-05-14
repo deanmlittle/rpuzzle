@@ -1,68 +1,66 @@
-declare module '@deanmlittle/rpuzzle' {
-  import bsv from 'bsv';
+import bsv from 'bsv';
 
-  export namespace RPuzzle {
-    class RValue {
-      constructor(r: RValue | Buffer);
+export namespace RPuzzle {
+  class RValue {
+    constructor(r: RValue | Buffer);
 
-      static fromKValue(k: KValue): RValue;
-      static fromPublicKey(pub: bsv.PublicKey): RValue;
-      static fromHDPublicKey(pub: bsv.HDPublicKey): RValue;
-      static fromBuffer(buf: Buffer): RValue;
-      static fromHex(hex: string): RValue;
+    static fromKValue(k: KValue): RValue;
+    static fromPublicKey(pub: bsv.PublicKey): RValue;
+    static fromHDPublicKey(pub: bsv.HDPublicKey): RValue;
+    static fromBuffer(buf: Buffer): RValue;
+    static fromHex(hex: string): RValue;
 
-      toHex(): string;
-      toBuffer(): Buffer;
-    }
-
-    class KValue {
-      constructor(k: KValue | Buffer);
-
-      static fromPrivateKey(priv: bsv.PrivateKey): KValue;
-      static fromHDPrivateKey(priv: bsv.HDPrivateKey): KValue;
-      static fromRandom(): KValue;
-      static fromBuffer(buf: Buffer): KValue;
-      static fromHex(hex: string): KValue;
-
-      toHex(): string;
-      toRvalue(): RValue;
-      toBuffer(): Buffer;
-    }
+    toHex(): string;
+    toBuffer(): Buffer;
   }
 
-  export class RPuzzle {
-    constructor(
-      val: RValue | KValue,
-      key?: bsv.PrivateKey | bsv.HDPrivateKey,
-      path?: string | number
-    );
+  class KValue {
+    constructor(k: KValue | Buffer);
 
-    static fromPrivateKey(priv: bsv.PrivateKey): RPuzzle;
-    static fromPublicKey(pub: bsv.PublicKey): RPuzzle;
-    static fromHDPrivateKey(
-      priv: bsv.HDPrivateKey,
-      path: string | number
-    ): RPuzzle;
-    static fromHDPublicKey(pub: bsv.HDPublicKey): RPuzzle;
-    static fromRandom(): RPuzzle;
-    setType(
-      type:
-        | 'PayTORHASH160'
-        | 'PayToRRIPEMD160'
-        | 'PayToRSHA256'
-        | 'PayToRHASH256'
-        | 'PayToRSHA1'
-        | 'PayToR'
-    ): void;
-    setPrivateKey(priv: bsv.PrivateKey): void;
-    toASM(): string;
-    toScript(): bsv.Script;
-    getRHash(): Buffer;
-    getRpuzzleType(): bsv.Opcode | false;
-    sign(tx: bsv.Transaction, sigtype?: any); // TODO sigtype
-    match(script: bsv.Script): boolean;
-    getUTXOs(tx: bsv.Transction): Array<bsv.Transaction.UnspentOutput>;
+    static fromPrivateKey(priv: bsv.PrivateKey): KValue;
+    static fromHDPrivateKey(priv: bsv.HDPrivateKey): KValue;
+    static fromRandom(): KValue;
+    static fromBuffer(buf: Buffer): KValue;
+    static fromHex(hex: string): KValue;
+
+    toHex(): string;
+    toRvalue(): RValue;
+    toBuffer(): Buffer;
   }
-
-  export default RPuzzle;
 }
+
+export class RPuzzle {
+  constructor(
+    val: RValue | KValue,
+    key?: bsv.PrivateKey | bsv.HDPrivateKey,
+    path?: string | number
+  );
+
+  static fromPrivateKey(priv: bsv.PrivateKey): RPuzzle;
+  static fromPublicKey(pub: bsv.PublicKey): RPuzzle;
+  static fromHDPrivateKey(
+    priv: bsv.HDPrivateKey,
+    path: string | number
+  ): RPuzzle;
+  static fromHDPublicKey(pub: bsv.HDPublicKey): RPuzzle;
+  static fromRandom(): RPuzzle;
+  setType(
+    type:
+      | 'PayTORHASH160'
+      | 'PayToRRIPEMD160'
+      | 'PayToRSHA256'
+      | 'PayToRHASH256'
+      | 'PayToRSHA1'
+      | 'PayToR'
+  ): void;
+  setPrivateKey(priv: bsv.PrivateKey): void;
+  toASM(): string;
+  toScript(): bsv.Script;
+  getRHash(): Buffer;
+  getRpuzzleType(): bsv.Opcode | false;
+  sign(tx: bsv.Transaction, sigtype?: any); // TODO sigtype
+  match(script: bsv.Script): boolean;
+  getUTXOs(tx: bsv.Transction): Array<bsv.Transaction.UnspentOutput>;
+}
+
+export default RPuzzle;
