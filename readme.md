@@ -76,9 +76,7 @@ console.log(toTx.uncheckedSerialize());
 ```
 
 #### Step 4) Broadcast transaction
-Head on over to https://whatsonchain.com/broadcast and paste in your new raw tx hex. You can either preview the TX to make sure everything looks correct (also not a bad way to figure out your fee rate).
-
-Assuming everything looks okay, hit the broadcast button and you're done!
+Head on over to https://whatsonchain.com/broadcast and paste in your new raw tx hex. You can either preview the TX to make sure everything looks correct (also not a bad way to figure out your fee rate), or assuming everything looks okay, hit the broadcast button and you're done!
 
 ### Other examples
 You can actually publish any kind of R Puzzle you want. Here's a transaction I made where I created one output of each type:
