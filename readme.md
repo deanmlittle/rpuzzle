@@ -106,7 +106,6 @@ The current type options include:
 | PayToR | <r> |
 
 ### TODO:
-- Typescript definitions
 - Better examples
 - Multisig R Puzzles
 - Testnet testing (Yes, real devs code straight on Mainnet. It should work though with a bit of tweaking!)
@@ -119,7 +118,7 @@ Want to contribute? Please do! Feel free to submit bugs or pull requests to this
 You can also tip me at `deanlittle@moneybutton.com`, `1deanlittle` or `/pay @40` on Twetch.
 
 ### Contributors
-@TeamWinnar / u/45
+@TeamWinnar - u/45 - Typescript definitions, signing code, proofreading
 
 ### Legal stuff
 This code is provided free of charge with no warranties. Use at your own risk. Besides that, I don't really care how you use it so long as you promise to go build something cool. ;)
