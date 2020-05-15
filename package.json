@@ -22,6 +22,7 @@
     "bsv": "^1.5.3"
   },
   "devDependencies": {
+    "terser-webpack-plugin": "^3.0.1",
     "webpack": "4.29.3",
     "webpack-cli": "3.2.3"
   },
