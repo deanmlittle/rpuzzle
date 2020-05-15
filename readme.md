@@ -110,7 +110,6 @@ The current type options include:
 - Multisig R Puzzles
 - Testnet testing (Yes, real devs code straight on Mainnet. It should work though with a bit of tweaking!)
 - SIGHASH_NONE and SIGHASH_ANYONECANPAY, haven't tried this at all.
-- Browser testing. Should work, may have Buffer issues? Let me know.
 
 ### Development
 
