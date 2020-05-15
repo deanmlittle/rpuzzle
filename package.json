@@ -1,5 +1,5 @@
 {
-  "name": "@deanmlittle/rpuzzle",
+  "name": "rpuzzle",
   "version": "0.0.1",
   "description": "A simple library to help you create, sign and spend any kind of R Puzzle.",
   "main": "index.js",
