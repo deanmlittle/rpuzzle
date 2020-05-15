@@ -1,7 +1,4 @@
-(function() {
-    const RPuzzle = require('./lib/RPuzzle');
-    if (typeof module !== 'undefined' && typeof module.exports !== 'undefined')
-        module.exports = RPuzzle;
-    else
-        window.RPuzzle = ValRPuzzleidator;
-})();
+const RPuzzle = require('./lib/RPuzzle');
+window.RPuzzle = RPuzzle;
+global.RPuzzle = RPuzzle;
+module.exports = RPuzzle;
