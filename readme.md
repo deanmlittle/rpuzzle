@@ -5,7 +5,7 @@ A simple library to help you create, sign and spend any kind of R Puzzle.
 *Please note, RPuzzle has a peer dependency of `bsv` which must be installed independently to avoid version collisions.*
 
 To get started, simply run:
-```npm i bsv https://github.com/deanmlittle/rpuzzle```
+```npm i bsv rpuzzle```
 
 Alternatively, you can embed the following two scripts into your project:
 
