@@ -1,4 +1,7 @@
 const RPuzzle = require('./lib/RPuzzle');
-window.RPuzzle = RPuzzle;
-global.RPuzzle = RPuzzle;
-module.exports = RPuzzle;
+if (typeof module === 'undefined'){
+    window.RPuzzle = RPuzzle;
+    global.RPuzzle = RPuzzle;
+} else {
+    module.exports = RPuzzle;
+}
