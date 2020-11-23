@@ -11,7 +11,7 @@ Alternatively, you can embed the following two scripts into your project:
 
 ```html
 <script type="text/javascript" src="https://unpkg.com/bsv@1.5.3/bsv.min.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/deanmlittle/rpuzzle/rpuzzle.min.js"></script>
+<script type="text/javascript" src="https://unpkg.com/rpuzzle@0.0.4/rpuzzle.min.js"></script>
 ```
 
 ### Quickstart
