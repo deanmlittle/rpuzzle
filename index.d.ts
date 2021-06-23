@@ -31,7 +31,7 @@ export namespace RPuzzle {
 
 export class RPuzzle {
   constructor(
-    val: RValue | KValue,
+    val: RPuzzle.RValue | RPuzzle.KValue,
     key?: bsv.PrivateKey | bsv.HDPrivateKey,
     path?: string | number
   );
@@ -57,10 +57,10 @@ export class RPuzzle {
   toASM(): string;
   toScript(): bsv.Script;
   getRHash(): Buffer;
-  getRpuzzleType(): bsv.Opcode | false;
+  getRpuzzleType(): { op: number, hash: Function } | false;
   sign(tx: bsv.Transaction, sigtype?: any); // TODO sigtype
   match(script: bsv.Script): boolean;
-  getUTXOs(tx: bsv.Transction): Array<bsv.Transaction.UnspentOutput>;
+  getUTXOs(tx: bsv.Transaction): Array<bsv.Transaction.UnspentOutput>;
 }
 
 export default RPuzzle;
